@@ -1,0 +1,111 @@
+/*
+  PROJECT 3 — style.css: HOW THINGS LOOK 💅  (no changes needed, but feel free to play!)
+  Each block says "for THESE things { use THESE looks; }".
+*/
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #f4ecff;
+}
+
+canvas { display: block; }
+
+#title {
+  position: fixed;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  font-size: clamp(18px, 3vw, 40px);
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+#toolbar {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: calc(100vw - 280px);
+}
+
+#toolbar button, #toolbar select {
+  font: inherit;
+  font-size: 14px;
+  color: inherit;
+  background: rgba(20, 10, 40, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+#toolbar button:hover, #toolbar select:hover { background: rgba(80, 50, 140, 0.75); }
+#toolbar select option { background: #1a1030; }
+
+#selfcheck, #my-panel {
+  position: fixed;
+  left: 12px;
+  background: rgba(10, 5, 25, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13px;
+  backdrop-filter: blur(6px);
+}
+
+#selfcheck { top: 60px; width: 290px; max-height: calc(100vh - 140px); overflow-y: auto; }
+#selfcheck h2, #my-panel h2 { font-size: 15px; margin: 0 0 6px; }
+#selfcheck h3 { font-size: 13px; margin: 10px 0 4px; opacity: 0.8; }
+#selfcheck ul { list-style: none; margin: 0; padding: 0; }
+#selfcheck li { margin: 4px 0; }
+#selfcheck li.done { opacity: 0.6; }
+#selfcheck li.bonus { opacity: 0.75; }
+#selfcheck small { display: block; margin-left: 24px; color: #ffcf7a; }
+#selfcheck .party { text-align: center; font-weight: bold; color: #9dffcf; }
+#selfcheck .tip { font-size: 11px; opacity: 0.5; margin: 8px 0 0; }
+
+#my-panel { bottom: 80px; width: 220px; }
+#my-panel label { display: flex; justify-content: space-between; align-items: center; margin: 6px 0; gap: 8px; }
+
+#toast {
+  position: fixed;
+  top: 64px;
+  left: 50%;
+  transform: translate(-50%, -20px);
+  background: rgba(20, 10, 40, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 10;
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+#bugs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: #b3002d;
+  color: white;
+  padding: 10px 16px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 14px;
+}
+#bugs small { display: block; margin-top: 6px; opacity: 0.85; font-family: system-ui, sans-serif; }
+
+[hidden] { display: none !important; }

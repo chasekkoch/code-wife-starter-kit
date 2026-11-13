@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+═══════════════════════════════════════════════════════════════════════
+  PROJECT 3 — index.html: THE PAGE 📄  ✅ SOLVED THROUGH STEP 3.4
+═══════════════════════════════════════════════════════════════════════
+HTML describes WHAT is on the page: buttons, titles, sliders. Each thing
+is a "tag" like <button>...</button>. CSS (style.css) decides how it
+LOOKS, and JavaScript (the .js files) decides what it DOES.
+
+You only need to edit this file for ⭐ BONUS STEP 3.10 (search "my-panel").
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title"></h1>
+
+  <nav id="toolbar">
+    <button id="sound">🔊 Start sound</button>
+    <button id="save">💾 Save</button>
+    <select id="load"></select>
+    <button id="surprise">🎲 Surprise me</button>
+    <button id="checklist">✅</button>
+  </nav>
+
+  <aside id="selfcheck"></aside>
+
+  <!-- ⭐ BONUS STEP 3.10: put your hand-made sliders inside this div. Example:
+       <label>Speed <input id="speed-slider" type="range" min="0.1" max="6" step="0.1"></label>
+  -->
+  <div id="my-panel" hidden>
+  </div>
+
+  <div id="toast"></div>
+
+  <!-- 📚 Libraries (downloaded from the internet. See the README for offline mode) -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tone@15.1.22/build/Tone.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.21.0/dist/lil-gui.umd.min.js"></script>
+
+  <!-- ✨ Our code (errors.js goes first so it can catch bugs in the others) -->
+  <script src="errors.js"></script>
+  <script src="params.js"></script>
+  <script src="sound.js"></script>
+  <script src="settings.js"></script>
+  <script src="selfcheck.js"></script>
+  <script src="my_panel.js"></script>
+  <script src="sketch.js"></script>
+  <script src="toolbar.js"></script>
+</body>
+</html>

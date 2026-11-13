@@ -1,0 +1,20 @@
+{
+  "background": "#1a0505",
+  "colorA": "#ffcc33",
+  "colorB": "#d4202c",
+  "particleCount": 2200,
+  "particleSize": 1.6,
+  "particleAlpha": 70,
+  "trailFade": 14,
+  "glow": true,
+  "speed": 2.4,
+  "noiseScale": 0.004,
+  "noiseSpeed": 0.003,
+  "swirl": 3,
+  "volume": -14,
+  "mood": "hopeful",
+  "rootNote": "G3",
+  "chordSeconds": 3,
+  "reverb": 6,
+  "brightness": 3500
+}

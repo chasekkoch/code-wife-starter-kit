@@ -1,0 +1,10 @@
+{
+  "lumos": {"effect": "The tip of your wand glows with a soft, warm light.", "color": "bright_yellow"},
+  "nox": {"effect": "The light goes out. The cat's eyes are still glowing, though.", "color": "grey50"},
+  "accio": {"effect": "A carton of lo mein zooms across the room into your hand.", "color": "cyan"},
+  "alohomora": {"effect": "Click! The fridge unlocks. Midnight dumplings acquired.", "color": "green"},
+  "wingardium leviosa": {"effect": "The cat floats gently into the air... and is NOT amused.", "color": "magenta"},
+  "expecto patronum": {"effect": "A shimmering silver cat bursts from your wand!", "color": "bright_white"},
+  "riddikulus": {"effect": "The scary bug in your code turns into a rubber duck.", "color": "yellow"},
+  "obliviate": {"effect": "Wait... what were we doing again?", "color": "blue"}
+}

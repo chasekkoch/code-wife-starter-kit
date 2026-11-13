@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+
+# Project 3 – offline copies of the JavaScript libraries (see README › Offline mode)
+**/web/vendor/

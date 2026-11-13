@@ -1,0 +1,6 @@
+# Everything the starter kit needs. Install with:  pip install -r requirements.txt
+rich>=13.7          # colorful terminal output (Projects 1 & 2)
+pytest>=8.0         # runs the exercise checks behind `python check.py`
+fastapi>=0.110      # tiny web server for Project 3
+uvicorn>=0.29       # runs the FastAPI server
+httpx>=0.27         # lets the checks talk to the Project 3 server
